@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-container {
+  width: 60%;
+  /* display: flex; */
+  /* max-width: 700px; */
+  margin: 30px 20%;
+  padding: 20px;
+  background-color: #98c9a3;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  display: flex;
+}
+
+.profile-info {
+  flex: 2;
+}
+
+.profile-info h1 {
+  display: grid;
+  font-size: 1em;
+  flex-wrap: wrap;
+
+  margin-bottom: 10px;
+}
+
+.profile-info p {
+  font-size: 1em;
+  /* display: flex; */
+  color: white;
+}
+
+.profile-section {
+  margin-bottom: 30px;
+}
+
+.profile-section h2 {
+  font-size: 1.5em;
+  border-bottom: 2px solid #333;
+  color: white;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.profile-details p,
+.profile-resume a,
+.profile-contact p {
+  font-size: 0.8em;
+  /* color: aliceblue; */
+  margin-bottom: 10px;
+}
+
+.profile-resume a {
+  color: #bc4b51;
+  font-size: 2em;
+
+  text-decoration: none;
+}
+
+.profile-resume a:hover {
+  text-decoration: underline;
+}
+
+.profile-skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+}
+
+.profile-skills li {
+  background-color: #ffc9b9;
+  color: black;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.profile-experience .experience-item {
+  margin-bottom: 20px;
+}
+.experience-item P{
+  color:black;
+}
+
+.profile-experience h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.profile-experience p {
+  margin-bottom: 10px;
+}
+
+.profile-experience strong {
+  font-size: 1em;
+  color: #df1a1a;
+}
+
+.profile-contact a {
+  color: #cf36c2;
+  text-decoration: none;
+}
+
+.profile-contact a:hover {
+  text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <button onclick="history.back()">Back</button>
+    <div class="profile-container">
+        <div class="profile-header">
+            <div class="profile-image">
+                <img src="ASSETS/profilemain.jpg" alt="Profile Picture">
+            </div>
+            <div class="profile-info">
+                <h1>CRIS THOPHER HENDRY GAYLE</h1>
+                <p>Software Engineer</p>
+            </div>
+        </div>
+        
+        <div class="profile-section">
+            <h2>Personal Information</h2>
+            <div class="profile-details">
+                <p><strong>Email:</strong> jayabalan2475@gmail.com</p>
+                <p><strong>Phone:</strong> 9942626736</p>
+                <p><strong>Location:</strong>Kumbakonam</p>
+            </div>
+        </div>
+        
+        <div class="profile-section">
+            <h2>Resume</h2>
+            <div class="profile-resume">
+                <a href="UserProfile.html" download>Download Resume</a>
+            </div>
+        </div>
+        
+        <div class="profile-section">
+            <h2>Skills</h2>
+            <div class="profile-skills">
+                <ul>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="profile-section">
+            <h2>Experience</h2>
+            <div class="profile-experience">
+                <div class="experience-item">
+                    <h3>Senior Software Engineer</h3>
+                    <p><strong>ABC Tech Inc.</strong> | Jan 2020 - Present</p>
+                    <p>Developed and maintained web applications using JavaScript, React, and Node.js. Collaborated with cross-functional teams to design and implement new features.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Software Engineer</h3>
+                    <p><strong>XYZ Solutions</strong> | Jun 2017 - Dec 2019</p>
+                    <p>Worked on backend services and API integrations using Python and SQL. Improved application performance and implemented new functionalities as per client requirements.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="profile-section">
+            <h2>Contact</h2>
+            <div class="profile-contact">
+                <p>If you would like to get in touch, please email me at <a href="mailto:jayabalan2475@gmail.com">jayabalan2475@gmail.com</a>.</p>
+            </div>
+        </div>
+        <button>Edit Profile</button>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

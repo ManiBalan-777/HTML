@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .header{
+            border-top: 6px solid rgb(20, 21, 21);
+            border-bottom: 4px solid rgb(10, 214, 241);
+            font-family: "Gill sans",sans-serif;
+            font-size: 25px;
+        }
+        #logo,img{
+            margin-left: 100px;
+        }
+        #head,h2{
+            margin-top: -6%;
+        }
+        .fmbody{
+            margin-top: 1%;
+            width: 30%;
+            height: 250px;
+            background-color: rgb(12, 163, 171);
+            box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.5);
+        }
+        .fmbody {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .input-container {
+            display: flex;
+            gap: 20px; 
+        }
+        label{
+            font-size: 25px;
+            padding-top: 10px;
+            color: white;
+        }
+        input
+        {
+            background-color: rgb(221, 237, 237);   
+            height: 50px;
+        }  
+        input:hover{
+            border-radius: 8px;
+        }
+        input:active{
+            color: rgb(236, 239, 244);
+            background-color: rgb(6, 212, 20);
+        }
+        #sub{
+            width: 20%;
+        }           
+    </style>
+</head>
+<body>
+    <form action="cseserv" method="post">
+    <div class="header">
+        <img src="annalogo.png" alt="" width="6%" height="10%" id="logo">
+        <center><p id="head"><b>Anna University, Chennai</b><br>Office of the Controller of Examinations<br>Pre-Examination Monitoring Systems</p></center>
+    </div>
+    <center>
+    <div class="fmbody">
+            <h1>STUDENT LOGIN</h1><br>
+            <label for="">Register Number</label>
+            <input type="text" name="rollno"><br>
+            <label for="">Date-of-Birth</label>
+            <input type="date" name="dob"><br>
+            <input type="submit" value="Login" id="sub">
+    </div>
+    </center>
+    </form>
+</body>
+</html
